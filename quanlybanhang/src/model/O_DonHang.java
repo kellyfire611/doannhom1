@@ -6,27 +6,30 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
  *
  * @author '
  */
-public class DonHang {
+public class O_DonHang {
 
     private int dh_ma;
-    private Date dh_ngaylap;
-    private Date dh_ngaygiao;
+    private String dh_ngaylap;
+    private String dh_ngaygiao;
     private String dh_noigiao;
     private String dh_trangthaithanhtoan;
     private NhanVien nv_duyet_donhang;
     private List<DonHang_SanPham> donhang_sanpham;
 
-    public DonHang() {
+    public O_DonHang() {
+    }
+    
+    public O_DonHang(int dh_ma) {
+    	this.dh_ma = dh_ma;
     }
 
-    public DonHang(int dh_ma, Date dh_ngaylap, Date dh_ngaygiao, 
+    public O_DonHang(int dh_ma, String dh_ngaylap, String dh_ngaygiao, 
             String dh_noigiao, String dh_trangthaithanhtoan) {
         this.dh_ma = dh_ma;
         this.dh_ngaylap = dh_ngaylap;
@@ -36,14 +39,15 @@ public class DonHang {
         this.donhang_sanpham = new ArrayList<DonHang_SanPham>();
     }
 
-    public DonHang(int dh_ma, Date dh_ngaylap, Date dh_ngaygiao, String dh_noigiao, 
+    public O_DonHang(int dh_ma, String dh_ngaylap, String dh_ngaygiao, String dh_noigiao, 
             String dh_trangthaithanhtoan, NhanVien nv_duyet_donhang) {
         this.dh_ma = dh_ma;
         this.dh_ngaylap = dh_ngaylap;
         this.dh_ngaygiao = dh_ngaygiao;
         this.dh_noigiao = dh_noigiao;
         this.dh_trangthaithanhtoan = dh_trangthaithanhtoan;
-        this.nv_duyet_donhang = nv_duyet_donhang;
+        this.setNv_duyet_donhang(nv_duyet_donhang);
+        this.donhang_sanpham = new ArrayList<DonHang_SanPham>();
     }
 
     public int getDh_ma() {
@@ -54,19 +58,19 @@ public class DonHang {
         this.dh_ma = dh_ma;
     }
 
-    public Date getDh_ngaylap() {
+    public String getDh_ngaylap() {
         return dh_ngaylap;
     }
 
-    public void setDh_ngaylap(Date dh_ngaylap) {
+    public void setDh_ngaylap(String dh_ngaylap) {
         this.dh_ngaylap = dh_ngaylap;
     }
 
-    public Date getDh_ngaygiao() {
+    public String getDh_ngaygiao() {
         return dh_ngaygiao;
     }
 
-    public void setDh_ngaygiao(Date dh_ngaygiao) {
+    public void setDh_ngaygiao(String dh_ngaygiao) {
         this.dh_ngaygiao = dh_ngaygiao;
     }
 
@@ -110,5 +114,13 @@ public class DonHang {
                             +"\nTrạng thái:" + getDh_trangthaithanhtoan()
         );
     }
+
+	public NhanVien getNv_duyet_donhang() {
+		return nv_duyet_donhang;
+	}
+
+	public void setNv_duyet_donhang(NhanVien nv_duyet_donhang) {
+		this.nv_duyet_donhang = nv_duyet_donhang;
+	}
 
 }

@@ -17,7 +17,7 @@ public class O_KhachHang extends NguoiDung{
     private String kh_dienthoai;
     private String kh_email;
     private String kh_loaiKH;
-    private List<DonHang> cacdonhang;
+    private List<O_DonHang> cacdonhang;
 
     public O_KhachHang() {
     }
@@ -60,15 +60,15 @@ public class O_KhachHang extends NguoiDung{
         this.kh_loaiKH = kh_loaiKH;
     }
     
-    public List<DonHang> getDonHang(){
+    public List<O_DonHang> getDonHang(){
         return cacdonhang;
     }
     
-    public void setDonHang(List<DonHang> donhang){
+    public void setDonHang(List<O_DonHang> donhang){
         this.cacdonhang = donhang;
     }
     
-    public boolean themMotDonHang(DonHang dh){
+    public boolean themMotDonHang(O_DonHang dh){
         return cacdonhang.add(dh);
     }
     

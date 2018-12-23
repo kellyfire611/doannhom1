@@ -16,7 +16,7 @@ public class NhanVien extends NguoiDung{
     private  double nv_luong;
     private String nv_ngaybatdaulamviec;
     private List<HoaDon> cachoadon;
-    private List<DonHang> cacdonhang;
+    private List<O_DonHang> cacdonhang;
 
     public NhanVien() {
     }
@@ -37,7 +37,7 @@ public class NhanVien extends NguoiDung{
     }
 
     public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
-            List<DonHang> cacdonhang, int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
+            List<O_DonHang> cacdonhang, int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
@@ -69,11 +69,11 @@ public class NhanVien extends NguoiDung{
         this.cachoadon = cachoadon;
     }
 
-    public List<DonHang> getCacdonhang() {
+    public List<O_DonHang> getCacdonhang() {
         return cacdonhang;
     }
 
-    public void setCacdonhang(List<DonHang> cacdonhang) {
+    public void setCacdonhang(List<O_DonHang> cacdonhang) {
         this.cacdonhang = cacdonhang;
     }
         
