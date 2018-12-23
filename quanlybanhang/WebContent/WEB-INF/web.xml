@@ -3,24 +3,42 @@
   <display-name>quanlybanhang</display-name>
 
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>/frontend/index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- Static resource -->
+  <!-- ./. End Static resource -->
 
-  <!-- Các URL dàng cho Frontend -->
+  <!-- Frontend URI -->
+  <!-- Giới thiệu -->
+  <servlet>
+    <servlet-name>frontend.about</servlet-name>
+    <jsp-file>/frontend/about.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>frontend.about</servlet-name>
+    <url-pattern>/gioi-thieu/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Liên hệ -->
+  <servlet>
+    <servlet-name>frontend.contact</servlet-name>
+    <jsp-file>/frontend/contact.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>frontend.contact</servlet-name>
+    <url-pattern>/lien-he</url-pattern>
+  </servlet-mapping>
+  <!-- ./. End Frontend URI -->
 
 
   <servlet>
-    <servlet-name>index</servlet-name>
-    <jsp-file>/home/index.jsp</jsp-file>
+    <servlet-name>index22</servlet-name>
+    <jsp-file>/home/index1.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>index</servlet-name>
-    <url-pattern>/home/</url-pattern>
+    <servlet-name>index22</servlet-name>
+    <url-pattern>/home1/</url-pattern>
   </servlet-mapping>
 
   <servlet>
