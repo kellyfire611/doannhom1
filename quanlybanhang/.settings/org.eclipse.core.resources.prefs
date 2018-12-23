@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//WebContent/cap_nhat_sinh_vien/update_chi_doan.jsp=UTF-8
+encoding//WebContent/home/login.jsp=UTF-8
+encoding//WebContent/moduls/header.jsp=UTF-8
+encoding//WebContent/moduls/menubar.jsp=UTF-8
+encoding//src/model/CONS_Lib.java=UTF-8
+encoding//src/model/D_BCHChiDoan.java=UTF-8
+encoding//src/model/D_ChiDoan.java=UTF-8
+encoding//src/model/D_DoanKhoa.java=UTF-8
+encoding//src/model/D_LichTrinh.java=UTF-8
+encoding//src/model/D_NguonKinhPhi.java=UTF-8
+encoding//src/model/D_SinhVien.java=UTF-8
+encoding//src/model/D_User.java=UTF-8
+encoding//src/model/Main.java=UTF-8
+encoding//src/model/O_Nguoi.java=UTF-8
+encoding/<project>=UTF-8
