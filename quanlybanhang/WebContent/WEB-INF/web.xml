@@ -102,6 +102,10 @@
   </servlet-mapping>
   
   <!-- AJAX -->
+  <!-- Sản phẩm -->
+  
+  <!-- ./. End AJAX -->
+ 
   <!-- ./. End Backend URI -->
 
   <servlet>

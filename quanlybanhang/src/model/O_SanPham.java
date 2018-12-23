@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author '
  */
-public class SanPham {
+public class O_SanPham {
 
     private int sp_ma;
     private String sp_ten;
@@ -24,10 +24,14 @@ public class SanPham {
     private String sp_hinhanh;
     private List<DonHang_SanPham> cac_chitiet_donhang;
 
-    public SanPham() {
+    public O_SanPham() {
+    }
+    
+    public O_SanPham(int sp_ma) {
+    	this.sp_ma = sp_ma;
     }
 
-    public SanPham(int sp_ma, String sp_ten, double sp_gia, String sp_mota, 
+    public O_SanPham(int sp_ma, String sp_ten, double sp_gia, String sp_mota, 
             int sp_soluong, String sp_loaisp, String sp_nhasanxuat, String sp_hinhanh) {
         this.sp_ma = sp_ma;
         this.sp_ten = sp_ten;

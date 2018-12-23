@@ -11,13 +11,13 @@ package model;
  */
 public class DonHang_SanPham {
     private  int sp_dh_soluong;
-    private SanPham sanpham;
+    private O_SanPham sanpham;
     private DonHang donhang;
 
     public DonHang_SanPham() {
     }
 
-    public DonHang_SanPham(int sp_dh_soluong, SanPham sanpham, DonHang donhang) {
+    public DonHang_SanPham(int sp_dh_soluong, O_SanPham sanpham, DonHang donhang) {
         this.sp_dh_soluong = sp_dh_soluong;
         this.sanpham = sanpham;
         this.donhang = donhang;
@@ -31,11 +31,11 @@ public class DonHang_SanPham {
         this.sp_dh_soluong = sp_dh_soluong;
     }
 
-    public SanPham getSanpham() {
+    public O_SanPham getSanpham() {
         return sanpham;
     }
 
-    public void setSanpham(SanPham sanpham) {
+    public void setSanpham(O_SanPham sanpham) {
         this.sanpham = sanpham;
     }
 
