@@ -238,7 +238,90 @@
 		</form>
 	</div>
 
-	
+	<div id="dialog_suaSanPham" title="SỬA SẢN PHẨM" style="display: none; text-align: center;">
+		<form name="frmSua" method="post">
+			<table width="100%" border="0" class="" cellpadding="5px">
+				<tr>
+					<td align="left" class="cell-dialog" width="200px">Loại sản phẩm<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtLoaiSanPham_sua" name="txtLoaiSanPham_sua" class="input-large " type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Mã sản phẩm<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtMaSanPham_sua" name="txtMaSanPham_sua" class="input-large " type="number">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Tên Sản phẩm<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtTenSanPham_sua" name="txtTenSanPham_sua" class="input-large " type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Giá bán<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtGiaBanSanPham_sua" name="txtGiaBanSanPham_sua" class="input-large " type="number">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Mô tả<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtMoTaSanPham_sua" name="txtMoTaSanPham_sua" class="input-large " type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Nhà sản xuất<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtNhaSanXuatSanPham_sua" name="txtNhaSanXuatSanPham_sua" class="input-large " type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Hình ảnh sản phẩm<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<select id="txtHinhAnhSanPham_sua" name="txtHinhAnhSanPham_sua" class="input-large ">
+							<option value="product-image (1).jpg">Hình ảnh 1</option>
+							<option value="product-image (2).jpg">Hình ảnh 2</option>
+							<option value="product-image (3).jpg">Hình ảnh 3</option>
+							<option value="product-image (4).jpg">Hình ảnh 4</option>
+							<option value="product-image (5).jpg">Hình ảnh 5</option>
+							<option value="product-image (6).jpg">Hình ảnh 6</option>
+							<option value="product-image (7).jpg">Hình ảnh 7</option>
+							<option value="product-image (8).jpg">Hình ảnh 8</option>
+							<option value="product-image (9).jpg">Hình ảnh 9</option>
+							<option value="product-image (10).jpg">Hình ảnh 10</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" class="cell-dialog">Số lượng tồn<font color="red">*</font>
+					</td>
+					<td align="left" class="cell-dialog">
+						<input id="txtSoLuongTonSanPham_sua" name="txtSoLuongTonSanPham_sua" class="input-large " type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2" class="cell-dialog">
+						<i>(<font color="red">*</font>) thông tin bắt buộc nhập</i>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2" class="cell-dialog">
+						<hr>
+						<button type="button" class="btn btn-success btn-cons" onclick="thuc_hien_sua()">Thực hiện</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
 	<% conn.closeconnect(); %>
 
 	<script>
@@ -358,11 +441,11 @@
 			var txtLoaiSanPham = $.trim($('#txtLoaiSanPham_sua').val());
 			var txtMaSanPham = $.trim($('#txtMaSanPham_sua').val());
 			var txtTenSanPham = $.trim($('#txtTenSanPham_sua').val());
-			var txtDiaChiSanPham = $.trim($('#txtDiaChiSanPham_sua').val());
-			var txtGioiTinhSanPham = $.trim($('#txtGioiTinhSanPham_sua').val());
-			var txtNgaySinhSanPham = $.trim($('#txtNgaySinhSanPham_sua').val());
-			var txtDienThoaiSanPham = $.trim($('#txtDienThoaiSanPham_sua').val());
-			var txtEmailSanPham = $.trim($('#txtEmailSanPham_sua').val());
+			var txtGiaBanSanPham = $.trim($('#txtGiaBanSanPham_sua').val());
+			var txtMoTaSanPham = $.trim($('#txtMoTaSanPham_sua').val());
+			var txtNhaSanXuatSanPham = $.trim($('#txtNhaSanXuatSanPham_sua').val());
+			var txtHinhAnhSanPham = $.trim($('#txtHinhAnhSanPham_sua').val());
+			var txtSoLuongTonSanPham = $.trim($('#txtSoLuongTonSanPham_sua').val());
 
 			if (txtLoaiSanPham == '') {
 				$('#txtLoaiSanPham_sua').parent().append(
@@ -379,28 +462,28 @@
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
-			if (txtDiaChiSanPham == '') {
-				$('#txtDiaChiSanPham_sua').parent().append(
+			if (txtGiaBanSanPham == '') {
+				$('#txtGiaBanSanPham_sua').parent().append(
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
-			if (txtGioiTinhSanPham == '') {
-				$('#txtGioiTinhSanPham_sua').parent().append(
+			if (txtNhaSanXuatSanPham == '') {
+				$('#txtNhaSanXuatSanPham_sua').parent().append(
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
-			if (txtNgaySinhSanPham == '') {
-				$('#txtNgaySinhSanPham_sua').parent().append(
+			if (txtMoTaSanPham == '') {
+				$('#txtMoTaSanPham_sua').parent().append(
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
-			if (txtDienThoaiSanPham == '') {
-				$('#txtDienThoaiSanPham_sua').parent().append(
+			if (txtHinhAnhSanPham == '') {
+				$('#txtHinhAnhSanPham_sua').parent().append(
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
-			if (txtEmailSanPham == '') {
-				$('#txtEmailSanPham_sua').parent().append(
+			if (txtSoLuongTonSanPham == '') {
+				$('#txtSoLuongTonSanPham_sua').parent().append(
 					"<div class='dynamic-input-error'>&uarr;&nbsp;Vui lòng nhập thông tin</div>");
 				valid = false;
 			}
@@ -414,11 +497,11 @@
 						'LoaiSanPham': txtLoaiSanPham,
 						'MaSanPham': txtMaSanPham,
 						'TenSanPham': txtTenSanPham,
-						'DiaChiSanPham': txtDiaChiSanPham,
-						'GioiTinhSanPham': txtGioiTinhSanPham,
-						'NgaySinhSanPham': txtNgaySinhSanPham,
-						'DienThoaiSanPham': txtDienThoaiSanPham,
-						'EmailSanPham': txtEmailSanPham,
+						'GiaBanSanPham': txtGiaBanSanPham,
+						'NhaSanXuatSanPham': txtNhaSanXuatSanPham,
+						'MoTaSanPham': txtMoTaSanPham,
+						'HinhAnhSanPham': txtHinhAnhSanPham,
+						'SoLuongTonSanPham': txtSoLuongTonSanPham,
 					},
 					success: function (data) {
 						location.reload();
