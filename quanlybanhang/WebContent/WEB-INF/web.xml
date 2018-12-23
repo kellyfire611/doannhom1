@@ -27,7 +27,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>frontend.contact</servlet-name>
-    <url-pattern>/lien-he</url-pattern>
+    <url-pattern>/lien-he/</url-pattern>
   </servlet-mapping>
   <!-- ./. End Frontend URI -->
 
