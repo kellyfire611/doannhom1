@@ -13,43 +13,40 @@
 		<!-- BEGIN SIDEBAR MENU -->
 
 		<ul>
-			<li class="start active "><a url="www.ctu.edu.vn"> <i
-					class="icon-custom-home"></i> <span class="title">Đại học Cần Thơ</span>
+			<li class="start active "><a url="www.ctu.edu.vn"> <i class="icon-custom-home"></i> <span class="title">Đại học Cần
+						Thơ</span>
 					<span class="selected"></span></a></li>
 			<li class=""><a url="www.cit.ctu.edu.vn"> <i class="icon-envelope"></i>
-					<span class="title">  Khoa CNTT&TT</span> 
-</a>
-			<li class=""><a href="javascript:;"> <i
-					class="icon-custom-form"></i> <span class="title">Quản lý</span> <span
-					class="arrow open "></span>
-			</a>
+					<span class="title"> Khoa CNTT&TT</span>
+				</a>
+			<li class=""><a href="javascript:;"> <i class="icon-custom-form"></i> <span class="title">Quản lý</span> <span class="arrow open "></span>
+				</a>
 				<ul class="sub-menu" style="display: block;">
-					
-					<li><a href="../cap_nhat_chi_doan/*">Danh sách chi đoàn.</a></li>
-					<li><a href="../ban_chap_hanh_chi_doan/">Ban chấp hành chi đoàn.</a></li>
-					<li><a href="../cap_nhat_chi_doan/*">Danh sách sinh viên.</a></li>
-					<li><a href="../ban_chap_hanh_doan_khoa/">Ban chấp hành đoàn khoa.</a></li>
-					<li><a href="../kehoach/">Cập nhật kế hoạch</a></li>
-					
 
-				</ul></li>
+					<li><a href="/quanlybanhang/admin/khachhang/">Danh sách Khách hàng.</a></li>
+					<li><a href="/quanlybanhang/admin/nhanvien/">Danh sách Nhân viên</a></li>
+					<li><a href="/quanlybanhang/admin/nguoidung/">Danh sách Người dùng.</a></li>
+				</ul>
+			</li>
 
-			<li class=""><a href="charts.html"> <i
-					class="icon-custom-chart"></i> <span class="title">Thống kê
+			<li class=""><a href="charts.html"> <i class="icon-custom-chart"></i> <span class="title">Quản lý đơn hàng</span><span
+					 class="arrow open "></span>
+				</a>
+				<ul class="sub-menu" style="display: block;">
+					<li><a href="/quanlybanhang/admin/sanpham/"> Danh sách Sản phẩm</a></li>
+					<li><a href="/quanlybanhang/admin/donhang/"> Danh sách đơn hàng</a></li>
+				</ul>
+			</li>
+
+			<li class=""><a href="charts.html"> <i class="icon-custom-chart"></i> <span class="title">Thống kê
 						kế hoạch</span><span class="arrow open "></span>
-			</a>
+				</a>
 				<ul class="sub-menu" style="display: block;">
-					<li><a href="../thong_ke_ke_hoach/*"> Tất cả kế hoạch</a></li>
-					<li><a href="../tim_ke_hoach_chi_tiet/*">Chi tiết kế hoạch</a></li>
-					<li><a href="../ds_hoat_dong_cua_chi_doan/*"> Hoạt động Chi Đoàn - Sinh Viên</a></li>
-					
-				</ul></li>
-		
-	
-		
-			
+					<li><a href="/quanlybanhang/admin/thongke/donhang"> Tất cả Đơn hàng</a></li>
+				</ul>
+			</li>
 		</ul>
-		
+
 		<a href="#" class="scrollup">Scroll</a>
 		<div class="clearfix"></div>
 		<!-- END SIDEBAR MENU -->
@@ -77,10 +74,11 @@
 			<div class="row-fluid">
 				<div class="span12">
 					<div style="background-color: white;" class="grid simple ">
-						<div href="index.jsp">
-							<img style="width: 100%;" src="../assets/img/bgbanner.jpg">
+						<div>
+							<img src="/quanlybanhang/assets/images/slide-01.jpg" width="100%" />
 						</div>
 					</div>
 				</div>
 			</div>
+
 </html>

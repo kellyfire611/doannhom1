@@ -31,6 +31,76 @@
   </servlet-mapping>
   <!-- ./. End Frontend URI -->
 
+  <!-- Backend URI -->
+  <servlet>
+    <servlet-name>backend.index</servlet-name>
+    <jsp-file>/backend/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.index</servlet-name>
+    <url-pattern>/admin/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Khách hàng -->
+  <servlet>
+    <servlet-name>backend.khachhang.index</servlet-name>
+    <jsp-file>/backend/khachhang/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.khachhang.index</servlet-name>
+    <url-pattern>/admin/khachhang/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Nhân viên -->
+  <servlet>
+    <servlet-name>backend.nhanvien.index</servlet-name>
+    <jsp-file>/backend/nhanvien/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.nhanvien.index</servlet-name>
+    <url-pattern>/admin/nhanvien/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Người dùng -->
+  <servlet>
+    <servlet-name>backend.nguoidung.index</servlet-name>
+    <jsp-file>/backend/nguoidung/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.nguoidung.index</servlet-name>
+    <url-pattern>/admin/nguoidung/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Sản phẩm -->
+  <servlet>
+    <servlet-name>backend.sanpham.index</servlet-name>
+    <jsp-file>/backend/sanpham/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.sanpham.index</servlet-name>
+    <url-pattern>/admin/sanpham/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Đơn hàng -->
+  <servlet>
+    <servlet-name>backend.donhang.index</servlet-name>
+    <jsp-file>/backend/donhang/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.donhang.index</servlet-name>
+    <url-pattern>/admin/donhang/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Thống kê -->
+  <servlet>
+    <servlet-name>backend.thongke.donhang</servlet-name>
+    <jsp-file>/backend/thongke/donhang.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.thongke.donhang</servlet-name>
+    <url-pattern>/admin/thongke/donhang/</url-pattern>
+  </servlet-mapping>
+  <!-- ./. End Backend URI -->
 
   <servlet>
     <servlet-name>index22</servlet-name>
