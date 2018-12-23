@@ -6485,3 +6485,7 @@ ul.my-friends li .profile-pic{
 	font-weight: 300;
 	text-indent: -2px;
 }
+
+.input-large {
+	width: 100%;
+}

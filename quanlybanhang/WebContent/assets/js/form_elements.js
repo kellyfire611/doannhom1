@@ -1,5 +1,6 @@
 //Cool ios7 switch - Beta version
 //Done using pure Javascript
+/*
 var Switch = require('ios7-switch')
         , checkbox = document.querySelector('.ios')
         , mySwitch = new Switch(checkbox);
@@ -7,8 +8,9 @@ var Switch = require('ios7-switch')
       mySwitch.el.addEventListener('click', function(e){
         e.preventDefault();
         mySwitch.toggle();
-      }, false);
+      }, false);*/
 //creating multiple instances
+/*
 var Switch2 = require('ios7-switch')
         , checkbox = document.querySelector('.iosblue')
         , mySwitch2 = new Switch2(checkbox);
@@ -16,7 +18,7 @@ var Switch2 = require('ios7-switch')
       mySwitch2.el.addEventListener('click', function(e){
         e.preventDefault();
         mySwitch2.toggle();
-      }, false);
+      }, false);*/
 	  
 $(document).ready(function(){
 	  //Dropdown menu - select2 plug-in

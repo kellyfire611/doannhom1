@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,17 +13,17 @@ import java.util.List;
  *
  * @author '
  */
-public class KhachHang extends NguoiDung{
+public class O_KhachHang extends NguoiDung{
     private String kh_dienthoai;
     private String kh_email;
     private String kh_loaiKH;
     private List<DonHang> cacdonhang;
 
-    public KhachHang() {
+    public O_KhachHang() {
     }
 
-    public KhachHang(String kh_dienthoai, String kh_email, String kh_loaiKH, 
-            int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, Date nd_ngaysinh) {
+    public O_KhachHang(String kh_dienthoai, String kh_email, String kh_loaiKH, 
+            int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.kh_dienthoai = kh_dienthoai;
         this.kh_email = kh_email;
@@ -31,7 +31,12 @@ public class KhachHang extends NguoiDung{
         this.cacdonhang = new ArrayList<>();
     }
 
-    public String getKh_dienthoai() {
+    public O_KhachHang(int nd_ma) {
+		// TODO Auto-generated constructor stub
+    	super(nd_ma);
+	}
+
+	public String getKh_dienthoai() {
         return kh_dienthoai;
     }
 

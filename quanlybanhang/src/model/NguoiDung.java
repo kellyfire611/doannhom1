@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package model;
 
 import java.util.Date;
 
@@ -16,12 +16,17 @@ public class NguoiDung {
     private String nd_ten;
     private T_DiaChi nd_diachi;
     private String nd_gioitinh;
-    private Date nd_ngaysinh;
+    private String nd_ngaysinh;
 
     public NguoiDung() {
+    	
+    }
+    
+    public NguoiDung(int nd_ma) {
+    	this.nd_ma = nd_ma;
     }
 
-    public NguoiDung(int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, Date nd_ngaysinh) {
+    public NguoiDung(int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         this.nd_ma = nd_ma;
         this.nd_ten = nd_ten;
         this.nd_diachi = nd_diachi;
@@ -61,11 +66,11 @@ public class NguoiDung {
         this.nd_gioitinh = nd_gioitinh;
     }
 
-    public Date getNd_ngaysinh() {
+    public String getNd_ngaysinh() {
         return nd_ngaysinh;
     }
 
-    public void setNd_ngaysinh(Date nd_ngaysinh) {
+    public void setNd_ngaysinh(String nd_ngaysinh) {
         this.nd_ngaysinh = nd_ngaysinh;
     }
     

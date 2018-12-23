@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package model;
 
 import java.util.Date;
 import java.util.List;
@@ -14,30 +14,30 @@ import java.util.List;
  */
 public class NhanVien extends NguoiDung{
     private  double nv_luong;
-    private Date nv_ngaybatdaulamviec;
+    private String nv_ngaybatdaulamviec;
     private List<HoaDon> cachoadon;
     private List<DonHang> cacdonhang;
 
     public NhanVien() {
     }
 
-    public NhanVien(double nv_luong, Date nv_ngaybatdaulamviec, int nd_ma, 
-                String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, Date nd_ngaysinh) {
+    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, int nd_ma, 
+                String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
     }
 
-    public NhanVien(double nv_luong, Date nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
-            int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, Date nd_ngaysinh) {
+    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
+            int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
         this.cachoadon = cachoadon;
     }
 
-    public NhanVien(double nv_luong, Date nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
-            List<DonHang> cacdonhang, int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, Date nd_ngaysinh) {
+    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
+            List<DonHang> cacdonhang, int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
@@ -53,11 +53,11 @@ public class NhanVien extends NguoiDung{
         this.nv_luong = nv_luong;
     }
 
-    public Date getNv_ngaybatdaulamviec() {
+    public String getNv_ngaybatdaulamviec() {
         return nv_ngaybatdaulamviec;
     }
 
-    public void setNv_ngaybatdaulamviec(Date nv_ngaybatdaulamviec) {
+    public void setNv_ngaybatdaulamviec(String nv_ngaybatdaulamviec) {
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
     }
 
