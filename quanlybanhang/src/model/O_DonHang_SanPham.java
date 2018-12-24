@@ -9,15 +9,15 @@ package model;
  *
  * @author '
  */
-public class DonHang_SanPham {
+public class O_DonHang_SanPham {
     private  int sp_dh_soluong;
     private O_SanPham sanpham;
     private O_DonHang donhang;
 
-    public DonHang_SanPham() {
+    public O_DonHang_SanPham() {
     }
 
-    public DonHang_SanPham(int sp_dh_soluong, O_SanPham sanpham, O_DonHang donhang) {
+    public O_DonHang_SanPham(int sp_dh_soluong, O_SanPham sanpham, O_DonHang donhang) {
         this.sp_dh_soluong = sp_dh_soluong;
         this.sanpham = sanpham;
         this.donhang = donhang;

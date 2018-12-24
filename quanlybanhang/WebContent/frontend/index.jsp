@@ -32,9 +32,9 @@
 	<%@include file="./layouts/includes/header.html"%>
 
 	<!-- Slider -->
-	<div class="container">
+	
 		<img src="assets/images/slide-01.jpg" width="100%" />
-	</div>
+	
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
@@ -129,10 +129,6 @@
 					<div class="block2">
 						<div class="block2-pic hov-img0">
 							<img src="/quanlybanhang/assets/images/products/<%= item.getSp_hinhanh() %>" alt="IMG-PRODUCT" width="100%" height="315px">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Xem nhanh Sản phẩm
-							</a>
 						</div>
 
 						<div class="block2-txt flex-w flex-t p-t-14">

@@ -22,7 +22,7 @@ public class O_SanPham {
     private String sp_loaisp;
     private String sp_nhasanxuat;
     private String sp_hinhanh;
-    private List<DonHang_SanPham> cac_chitiet_donhang;
+    private List<O_DonHang_SanPham> cac_chitiet_donhang;
 
     public O_SanPham() {
     }
@@ -41,7 +41,7 @@ public class O_SanPham {
         this.sp_loaisp = sp_loaisp;
         this.sp_nhasanxuat = sp_nhasanxuat;
         this.sp_hinhanh = sp_hinhanh;
-        this.cac_chitiet_donhang = new ArrayList<DonHang_SanPham>();
+        this.cac_chitiet_donhang = new ArrayList<O_DonHang_SanPham>();
     }
 
     public int getSp_ma() {
@@ -108,11 +108,11 @@ public class O_SanPham {
         this.sp_hinhanh = sp_hinhanh;
     }
     
-    public List<DonHang_SanPham> getDonhangSanpham(){
+    public List<O_DonHang_SanPham> getDonhangSanpham(){
         return cac_chitiet_donhang;
     }
     
-    public void setDonhangSanPham(List<DonHang_SanPham> dhsp){
+    public void setDonhangSanPham(List<O_DonHang_SanPham> dhsp){
         this.cac_chitiet_donhang = dhsp;
     }
     

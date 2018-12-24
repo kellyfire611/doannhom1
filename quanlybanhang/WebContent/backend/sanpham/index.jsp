@@ -202,7 +202,7 @@
 					<td align="left" class="cell-dialog">Hình ảnh sản phẩm<font color="red">*</font>
 					</td>
 					<td align="left" class="cell-dialog">
-						<select id="txtHinhAnhSanPham" name="txtHinhAnhSanPham" class="input-large ">
+						<!--  <select id="txtHinhAnhSanPham" name="txtHinhAnhSanPham" class="input-large ">
 							<option value="product-image (1).jpg">Hình ảnh 1</option>
 							<option value="product-image (2).jpg">Hình ảnh 2</option>
 							<option value="product-image (3).jpg">Hình ảnh 3</option>
@@ -213,7 +213,8 @@
 							<option value="product-image (8).jpg">Hình ảnh 8</option>
 							<option value="product-image (9).jpg">Hình ảnh 9</option>
 							<option value="product-image (10).jpg">Hình ảnh 10</option>
-						</select>
+						</select>-->
+						<input type="text" id="txtHinhAnhSanPham" name="txtHinhAnhSanPham" class="input-large " />
 					</td>
 				</tr>
 				<tr>
@@ -287,7 +288,7 @@
 					<td align="left" class="cell-dialog">Hình ảnh sản phẩm<font color="red">*</font>
 					</td>
 					<td align="left" class="cell-dialog">
-						<select id="txtHinhAnhSanPham_sua" name="txtHinhAnhSanPham_sua" class="input-large ">
+						<!-- <select id="txtHinhAnhSanPham_sua" name="txtHinhAnhSanPham_sua" class="input-large ">
 							<option value="product-image (1).jpg">Hình ảnh 1</option>
 							<option value="product-image (2).jpg">Hình ảnh 2</option>
 							<option value="product-image (3).jpg">Hình ảnh 3</option>
@@ -298,7 +299,8 @@
 							<option value="product-image (8).jpg">Hình ảnh 8</option>
 							<option value="product-image (9).jpg">Hình ảnh 9</option>
 							<option value="product-image (10).jpg">Hình ảnh 10</option>
-						</select>
+						</select> -->
+						<input type="text" id="txtHinhAnhSanPham_sua" name="txtHinhAnhSanPham_sua" class="input-large " />
 					</td>
 				</tr>
 				<tr>

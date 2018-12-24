@@ -11,24 +11,24 @@ import java.util.Date;
  *
  * @author '
  */
-public class HoaDon {
+public class O_HoaDon {
     private int hd_ma;
 private Date hd_ngaylap;
 private String hd_tencongty;
 private String hd_masothue;
-private NhanVien nhanvien;
+private O_NhanVien nhanvien;
 
-    public HoaDon() {
+    public O_HoaDon() {
     }
 
-    public HoaDon(int hd_ma, Date hd_ngaylap, String hd_tencongty, String hd_masothue) {
+    public O_HoaDon(int hd_ma, Date hd_ngaylap, String hd_tencongty, String hd_masothue) {
         this.hd_ma = hd_ma;
         this.hd_ngaylap = hd_ngaylap;
         this.hd_tencongty = hd_tencongty;
         this.hd_masothue = hd_masothue;
     }
 
-    public HoaDon(int hd_ma, Date hd_ngaylap, String hd_tencongty, String hd_masothue, NhanVien nhanvien) {
+    public O_HoaDon(int hd_ma, Date hd_ngaylap, String hd_tencongty, String hd_masothue, O_NhanVien nhanvien) {
         this.hd_ma = hd_ma;
         this.hd_ngaylap = hd_ngaylap;
         this.hd_tencongty = hd_tencongty;
@@ -68,11 +68,11 @@ private NhanVien nhanvien;
         this.hd_masothue = hd_masothue;
     }
 
-    public NhanVien getNhanvien() {
+    public O_NhanVien getNhanvien() {
         return nhanvien;
     }
 
-    public void setNhanvien(NhanVien nhanvien) {
+    public void setNhanvien(O_NhanVien nhanvien) {
         this.nhanvien = nhanvien;
     }
 

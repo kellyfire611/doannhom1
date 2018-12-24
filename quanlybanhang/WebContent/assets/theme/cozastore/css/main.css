@@ -40,61 +40,73 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ FONT ]*/
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+  /* font-family: Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-Light;
-  src: url('../fonts/Poppins/Poppins-Light.ttf'); 
+  /* font-family: Poppins-Light;
+  src: url('../fonts/Poppins/Poppins-Light.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-ExtraLight;
-  src: url('../fonts/Poppins/Poppins-ExtraLight.ttf'); 
+  /* font-family: Poppins-ExtraLight;
+  src: url('../fonts/Poppins/Poppins-ExtraLight.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
+  /* font-family: Poppins-Medium;
+  src: url('../fonts/Poppins/Poppins-Medium.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-Italic;
-  src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
+  /* font-family: Poppins-Italic;
+  src: url('../fonts/Poppins/Poppins-Italic.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
+  /* font-family: Poppins-Bold;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
+  /* font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+    */
+    font-family: Arial, sans-serif;
 }
 
 
 /*---------------------------------------------*/
 @font-face {
-  font-family: PlayfairDisplay-Regular;
-  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
+  /* font-family: PlayfairDisplay-Regular;
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: PlayfairDisplay-Bold;
-  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
+  /* font-family: PlayfairDisplay-Bold;
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 /*---------------------------------------------*/
 @font-face {
-  font-family: Montserrat-Regular;
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+  /* font-family: Montserrat-Regular;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+  /* font-family: Montserrat-Bold;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');  */
+  font-family: Arial, sans-serif;
 }
 
 
@@ -3329,4 +3341,9 @@ input.num-product::-webkit-inner-spin-button {
     padding: 20px;
   }
 
+}
+
+.main-menu > li > a {
+	font-size: 1.5em !important;
+	font-weight: bold;
 }

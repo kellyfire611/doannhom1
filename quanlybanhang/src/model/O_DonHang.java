@@ -19,8 +19,8 @@ public class O_DonHang {
     private String dh_ngaygiao;
     private String dh_noigiao;
     private String dh_trangthaithanhtoan;
-    private NhanVien nv_duyet_donhang;
-    private List<DonHang_SanPham> donhang_sanpham;
+    private O_NhanVien nv_duyet_donhang;
+    private List<O_DonHang_SanPham> donhang_sanpham;
 
     public O_DonHang() {
     }
@@ -36,18 +36,18 @@ public class O_DonHang {
         this.dh_ngaygiao = dh_ngaygiao;
         this.dh_noigiao = dh_noigiao;
         this.dh_trangthaithanhtoan = dh_trangthaithanhtoan;
-        this.donhang_sanpham = new ArrayList<DonHang_SanPham>();
+        this.donhang_sanpham = new ArrayList<O_DonHang_SanPham>();
     }
 
     public O_DonHang(int dh_ma, String dh_ngaylap, String dh_ngaygiao, String dh_noigiao, 
-            String dh_trangthaithanhtoan, NhanVien nv_duyet_donhang) {
+            String dh_trangthaithanhtoan, O_NhanVien nv_duyet_donhang) {
         this.dh_ma = dh_ma;
         this.dh_ngaylap = dh_ngaylap;
         this.dh_ngaygiao = dh_ngaygiao;
         this.dh_noigiao = dh_noigiao;
         this.dh_trangthaithanhtoan = dh_trangthaithanhtoan;
         this.setNv_duyet_donhang(nv_duyet_donhang);
-        this.donhang_sanpham = new ArrayList<DonHang_SanPham>();
+        this.donhang_sanpham = new ArrayList<O_DonHang_SanPham>();
     }
 
     public int getDh_ma() {
@@ -90,19 +90,19 @@ public class O_DonHang {
         this.dh_trangthaithanhtoan = dh_trangthaithanhtoan;
     }
 
-    public List<DonHang_SanPham> getDonhang_sanpham() {
+    public List<O_DonHang_SanPham> getDonhang_sanpham() {
         return donhang_sanpham;
     }
 
-    public void setDonhang_sanpham(List<DonHang_SanPham> donhang_sanpham) {
+    public void setDonhang_sanpham(List<O_DonHang_SanPham> donhang_sanpham) {
         this.donhang_sanpham = donhang_sanpham;
     }
    
-    public List<DonHang_SanPham> getDonhangSanpham(){
+    public List<O_DonHang_SanPham> getDonhangSanpham(){
         return donhang_sanpham;
     }
     
-    public void setDonhangSanPham(List<DonHang_SanPham> dhsp){
+    public void setDonhangSanPham(List<O_DonHang_SanPham> dhsp){
         this.donhang_sanpham = dhsp;
     }
     
@@ -115,11 +115,11 @@ public class O_DonHang {
         );
     }
 
-	public NhanVien getNv_duyet_donhang() {
+	public O_NhanVien getNv_duyet_donhang() {
 		return nv_duyet_donhang;
 	}
 
-	public void setNv_duyet_donhang(NhanVien nv_duyet_donhang) {
+	public void setNv_duyet_donhang(O_NhanVien nv_duyet_donhang) {
 		this.nv_duyet_donhang = nv_duyet_donhang;
 	}
 

@@ -25,7 +25,7 @@
 
 					<li><a href="/quanlybanhang/admin/khachhang/">Danh sách Khách hàng.</a></li>
 					<li><a href="/quanlybanhang/admin/nhanvien/">Danh sách Nhân viên</a></li>
-					<li><a href="/quanlybanhang/admin/nguoidung/">Danh sách Người dùng.</a></li>
+					<!-- <li><a href="/quanlybanhang/admin/nguoidung/">Danh sách Người dùng.</a></li> -->
 				</ul>
 			</li>
 
@@ -39,10 +39,10 @@
 			</li>
 
 			<li class=""><a href="charts.html"> <i class="icon-custom-chart"></i> <span class="title">Thống kê
-						kế hoạch</span><span class="arrow open "></span>
+						số liệu</span><span class="arrow open "></span>
 				</a>
 				<ul class="sub-menu" style="display: block;">
-					<li><a href="/quanlybanhang/admin/thongke/donhang"> Tất cả Đơn hàng</a></li>
+					<li><a href="/quanlybanhang/admin/thongke/donhang"> Báo cáo Doanh thu đơn hàng</a></li>
 				</ul>
 			</li>
 		</ul>

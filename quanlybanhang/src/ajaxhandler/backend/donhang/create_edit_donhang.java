@@ -15,7 +15,7 @@ import com.db4o.ObjectContainer;
 import model.D_DoanKhoa;
 import model.D_DonHang;
 import model.D_User;
-import model.NhanVien;
+import model.O_NhanVien;
 import model.PUB_Lib;
 import model.T_DiaChi;
 import sun.rmi.server.Dispatcher;
@@ -73,7 +73,7 @@ public class create_edit_donhang extends HttpServlet {
 					response.setContentType("text/plain");
 					response.getWriter().write("EXIST");
 				} else {
-					NhanVien nvDuyet = new NhanVien();
+					O_NhanVien nvDuyet = new O_NhanVien();
 					nvDuyet.setNd_ten(NhanVienDuyetDonHang);
 					d.add(db, MaDonHang, NgayLapDonHang, NgayLapDonHang, NoiGiaoDonHang, TinhTrangThanhToanDonHang, nvDuyet);
 					conn.closeconnect();
@@ -83,7 +83,7 @@ public class create_edit_donhang extends HttpServlet {
 			break;
 			case "sua":
 				// Cập nhật
-				NhanVien nvDuyet = new NhanVien();
+				O_NhanVien nvDuyet = new O_NhanVien();
 				nvDuyet.setNd_ten(NhanVienDuyetDonHang);
 				d.update(db, MaDonHang, NgayLapDonHang, NgayLapDonHang, NoiGiaoDonHang, TinhTrangThanhToanDonHang, nvDuyet);
 			break;

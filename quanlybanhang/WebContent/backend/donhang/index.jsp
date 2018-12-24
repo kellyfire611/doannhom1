@@ -275,7 +275,7 @@
 				<tr>
 					<td align="center" colspan="2" class="cell-dialog">
 						<hr>
-						<button type="button" class="btn btn-success btn-cons" onclick="thuc_hien_them()">Thực hiện</button>
+						<button type="button" class="btn btn-success btn-cons" onclick="thuc_hien_sua()">Thực hiện</button>
 					</td>
 				</tr>
 			</table>

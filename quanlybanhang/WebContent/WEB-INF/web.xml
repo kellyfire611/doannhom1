@@ -91,6 +91,16 @@
     <url-pattern>/admin/donhang/</url-pattern>
   </servlet-mapping>
 
+  <!-- Đơn hàng chi tiết -->
+  <servlet>
+    <servlet-name>backend.donhang.chitiet</servlet-name>
+    <jsp-file>/backend/donhang/chitiet.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>backend.donhang.chitiet</servlet-name>
+    <url-pattern>/admin/donhang/chitiet/</url-pattern>
+  </servlet-mapping>
+
   <!-- Thống kê -->
   <servlet>
     <servlet-name>backend.thongke.donhang</servlet-name>
@@ -98,7 +108,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>backend.thongke.donhang</servlet-name>
-    <url-pattern>/admin/thongke/donhang/</url-pattern>
+    <url-pattern>/admin/thongke/donhang*</url-pattern>
   </servlet-mapping>
   
   <!-- AJAX -->

@@ -12,23 +12,27 @@ import java.util.List;
  *
  * @author '
  */
-public class NhanVien extends NguoiDung{
+public class O_NhanVien extends NguoiDung{
     private  double nv_luong;
     private String nv_ngaybatdaulamviec;
-    private List<HoaDon> cachoadon;
+    private List<O_HoaDon> cachoadon;
     private List<O_DonHang> cacdonhang;
 
-    public NhanVien() {
+    public O_NhanVien() {
+    }
+    
+    public O_NhanVien(int ma) {
+    	super(ma);
     }
 
-    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, int nd_ma, 
+    public O_NhanVien(double nv_luong, String nv_ngaybatdaulamviec, int nd_ma, 
                 String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
     }
 
-    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
+    public O_NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<O_HoaDon> cachoadon, 
             int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
@@ -36,7 +40,7 @@ public class NhanVien extends NguoiDung{
         this.cachoadon = cachoadon;
     }
 
-    public NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<HoaDon> cachoadon, 
+    public O_NhanVien(double nv_luong, String nv_ngaybatdaulamviec, List<O_HoaDon> cachoadon, 
             List<O_DonHang> cacdonhang, int nd_ma, String nd_ten, T_DiaChi nd_diachi, String nd_gioitinh, String nd_ngaysinh) {
         super(nd_ma, nd_ten, nd_diachi, nd_gioitinh, nd_ngaysinh);
         this.nv_luong = nv_luong;
@@ -61,11 +65,11 @@ public class NhanVien extends NguoiDung{
         this.nv_ngaybatdaulamviec = nv_ngaybatdaulamviec;
     }
 
-    public List<HoaDon> getCachoadon() {
+    public List<O_HoaDon> getCachoadon() {
         return cachoadon;
     }
 
-    public void setCachoadon(List<HoaDon> cachoadon) {
+    public void setCachoadon(List<O_HoaDon> cachoadon) {
         this.cachoadon = cachoadon;
     }
 

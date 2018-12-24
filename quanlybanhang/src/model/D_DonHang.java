@@ -22,7 +22,7 @@ public class D_DonHang {
 	}
 	
 	public void add(ObjectContainer db,int dh_ma, String dh_ngaylap, String dh_ngaygiao, String dh_noigiao, 
-            String dh_trangthaithanhtoan, NhanVien nv_duyet_donhang){
+            String dh_trangthaithanhtoan, O_NhanVien nv_duyet_donhang){
 		try{
 			O_DonHang bKhachHang = new O_DonHang(dh_ma, dh_ngaylap, dh_ngaygiao, dh_noigiao, 
 		            dh_trangthaithanhtoan, nv_duyet_donhang);		
@@ -33,7 +33,7 @@ public class D_DonHang {
 	}
 	
 	public void update(ObjectContainer db, int dh_ma, String dh_ngaylap, String dh_ngaygiao, String dh_noigiao, 
-            String dh_trangthaithanhtoan, NhanVien nv_duyet_donhang){
+            String dh_trangthaithanhtoan, O_NhanVien nv_duyet_donhang){
 		try{
 			O_DonHang obj = (O_DonHang) db.queryByExample(new O_DonHang(dh_ma)).next();
 			obj.setDh_ngaygiao(dh_ngaygiao);
