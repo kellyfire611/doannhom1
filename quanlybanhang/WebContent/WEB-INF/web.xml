@@ -108,7 +108,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>backend.thongke.donhang</servlet-name>
-    <url-pattern>/admin/thongke/donhang*</url-pattern>
+    <url-pattern>/admin/thongke/donhang/</url-pattern>
   </servlet-mapping>
   
   <!-- AJAX -->

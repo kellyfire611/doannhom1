@@ -13,12 +13,6 @@
 		<!-- BEGIN SIDEBAR MENU -->
 
 		<ul>
-			<li class="start active "><a url="www.ctu.edu.vn"> <i class="icon-custom-home"></i> <span class="title">Đại học Cần
-						Thơ</span>
-					<span class="selected"></span></a></li>
-			<li class=""><a url="www.cit.ctu.edu.vn"> <i class="icon-envelope"></i>
-					<span class="title"> Khoa CNTT&TT</span>
-				</a>
 			<li class=""><a href="javascript:;"> <i class="icon-custom-form"></i> <span class="title">Quản lý</span> <span class="arrow open "></span>
 				</a>
 				<ul class="sub-menu" style="display: block;">
@@ -42,7 +36,7 @@
 						số liệu</span><span class="arrow open "></span>
 				</a>
 				<ul class="sub-menu" style="display: block;">
-					<li><a href="/quanlybanhang/admin/thongke/donhang"> Báo cáo Doanh thu đơn hàng</a></li>
+					<li><a href="/quanlybanhang/admin/thongke/donhang/"> Báo cáo Doanh thu đơn hàng</a></li>
 				</ul>
 			</li>
 		</ul>

@@ -33,12 +33,12 @@
 
 	<!-- Slider -->
 	
-		<img src="assets/images/slide-01.jpg" width="100%" />
+		<img src="assets/images/slide-01.jpg" style="height: 600px !important;" width="100%" />
 	
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(assets/images/slide-03.jpg);">
+				<div class="item-slick1" style="background-image: url(assets/images/slide-03.jpg);height:350px !important;" >
 					<!-- <div class="item-slick1"> -->
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(assets/images/slide-04.jpg);">
+				<div class="item-slick1" style="background-image: url(assets/images/slide-04.jpg);height:350px !important;">
 					<!-- <div class="item-slick1"> -->
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
@@ -128,7 +128,7 @@
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="/quanlybanhang/assets/images/products/<%= item.getSp_hinhanh() %>" alt="IMG-PRODUCT" width="100%" height="315px">
+							<img src="/quanlybanhang/assets/images/products/<%= item.getSp_hinhanh() %>" alt="<%= item.getSp_ten() %>" width="100%" height="315px">
 						</div>
 
 						<div class="block2-txt flex-w flex-t p-t-14">
@@ -142,7 +142,7 @@
 								</span>
 
 								<span class="stext-105 cl3">
-										<%=item.getSp_mota() %>
+										<%= item.getSp_mota().length() > 120 ? item.getSp_mota().substring(0, 120) + "..." : item.getSp_mota() %>
 									</span>
 									
 								<span class="stext-105 cl3">

@@ -1,6 +1,7 @@
 package ajaxhandler.backend.bacao.doanhthu;
 
 import java.io.IOException;
+import java.util.Calendar;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,10 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.Dispatch;
 
 import com.db4o.ObjectContainer;
+import com.db4o.ObjectSet;
+import com.db4o.query.Constraint;
+import com.db4o.query.Query;
 
 import model.D_DoanKhoa;
 import model.D_KhachHang;
 import model.D_User;
+import model.O_KeHoach;
 import model.PUB_Lib;
 import model.T_DiaChi;
 import sun.rmi.server.Dispatcher;
@@ -41,6 +46,7 @@ public class baocao_doanhthu_donhang extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setContentType("text/html;charset=UTF-8");
 	    String tuNgay = request.getParameter("tuNgay");
 	    String denNgay = request.getParameter("denNgay");
 		
@@ -48,7 +54,20 @@ public class baocao_doanhthu_donhang extends HttpServlet {
 		conn.connect_cascade();
 		ObjectContainer db = conn.getDb();
 		D_KhachHang d = new D_KhachHang();
-		d.delete(db, MaKhachHang);
+		//d.delete(db, MaKhachHang);
+		
+		
+//		Calendar calendar = Calendar.getInstance();
+//        calendar.set(1, 1, 1);
+//        Calendar calendar1 = Calendar.getInstance();
+//        calendar1.set(denNam, denThang, 1);
+//		Query query1 = db.query();
+//        query1.constrain(O_KeHoach.class);	        
+//        Constraint constr = query1.descend("ngayBatDau").constrain(calendar.getTime()).greater();	        
+//        Constraint constr1 = query1.descend("ngayBatDau").constrain(calendar1.getTime()).smaller().and(constr);
+//        query1.descend("duyet").constrain(true).and(constr1);
+//        ObjectSet<O_KeHoach> o_KeHoach = query1.execute();	    
+//    	return o_KeHoach;	        
 		
 		
 		

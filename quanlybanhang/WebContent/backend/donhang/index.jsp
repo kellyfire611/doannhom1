@@ -128,11 +128,12 @@
 								</td>
 								<td class=" sorting_1">
 									<%
+									if(item.getNv_duyet_donhang() != null)
 											out.println(item.getNv_duyet_donhang().getNd_ten());
 										%>
 								</td>
 								<td>
-									<button style="background-color: white;" class="btn btn-social" onclick="sua_mo_form('<%=item.getDh_ma()%>', <%=item.getDh_ngaylap()%>, '<%=item.getDh_ngaygiao()%>', '<%=item.getDh_noigiao()%>', '<%=item.getDh_trangthaithanhtoan()%>', '<%item.getNv_duyet_donhang().getNd_ten();%>');"><i
+									<button style="background-color: white;" class="btn btn-social" onclick="sua_mo_form('<%=item.getDh_ma()%>', <%=item.getDh_ngaylap()%>, '<%=item.getDh_ngaygiao()%>', '<%=item.getDh_noigiao()%>', '<%=item.getDh_trangthaithanhtoan()%>', '<%= item.getNv_duyet_donhang() == null ? "" : item.getNv_duyet_donhang().getNd_ten() %>');"><i
 										 class="icon-edit"></i></button>
 
 									<button style="background-color: white;" class="btn btn-social" onclick="thuc_hien_xoa(<%=item.getDh_ma()%>)"><i

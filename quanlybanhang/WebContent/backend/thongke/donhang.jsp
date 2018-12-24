@@ -82,9 +82,11 @@
 					        <label for="denNgay">Đến ngày</label>
 					        <input type="text" class="form-control" id="denNgay" name="denNgay">
 					    </div>
-					    <button type="submit" class="btn btn-primary" id="btnLapBaoCao">Lập báo cáo</button>
+					    <button type="button" class="btn btn-primary" id="btnLapBaoCao">Lập báo cáo</button>
 					</form>
-					<canvas id="chartOfobjChart" width="400" height="400"></canvas>
+					<div style="width: 600px !important;height: 600px !important;">
+						<canvas id="chartOfobjChart" width="600" height="600"></canvas>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -103,6 +105,41 @@
 	        var $chartOfobjChart = document.getElementById("chartOfobjChart").getContext("2d");
 	        $("#btnLapBaoCao").click(function(e) { 
 	            e.preventDefault();
+	            
+	            var myLabels = ['20/12/2018', '21/12/2018', '22/12/2018', '23/12/2018', '24/12/2018'];
+                var myData = ['500', '700', '900', '400', '300', '700'];
+                
+                myData.push(0); // creates a '0' index on the graph
+                if (typeof $objChart !== "undefined") {
+                    $objChart.destroy();
+                }
+                $objChart = new Chart($chartOfobjChart, {
+                    // The type of chart we want to create
+                    type: "bar",
+                    data: {
+                        labels: myLabels,
+                        datasets: [{
+                            data: myData,
+                            borderColor: "#9ad0f5",
+                            backgroundColor: "#9ad0f5",
+                            borderWidth: 1
+                        }]
+                    },
+                    // Configuration options go here
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: "Báo cáo đơn hàng"
+                        },
+                        responsive: true
+                    }
+                });
+	            
+	            
+	            /*
 	            $.ajax({
 	                url: '/admin/thongke/doanhthu/donhang/',
 	                type: "GET",
@@ -111,8 +148,8 @@
 	                    denNgay: $('#denNgay').val(),
 	                },
 	                success: function (response) {
-	                    var myLabels = [];
-	                    var myData = [];
+	                    var myLabels = ['20/12/2018', '21/12/2018', '22/12/2018', '23/12/2018', '24/12/2018'];
+	                    var myData = ['500', '700', '900', '400', '300', '700'];
 	                    $(response.data).each(function () {
 	                        myLabels.push((this.thoiGian));
 	                        myData.push(this.tongThanhTien);
@@ -147,6 +184,7 @@
 	                    });
 	                }
 	            });
+	            */
 	        });
 		});
 
